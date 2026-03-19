@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch(domain:purplepealexploit.com)",
+      "WebFetch(domain:mitolyn-purplepeelexploit.com)",
+      "WebFetch(domain:mittolyn.org)",
+      "WebFetch(domain:en-us-mitolyn-us.com)",
+      "WebFetch(domain:marketingbestproducts.com)",
+      "Bash(curl -s \"https://marketingbestproducts.com/purplepeel/\")"
+    ]
+  }
+}
