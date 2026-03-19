@@ -1,363 +1,235 @@
-<?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE html>
-<html xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b'
-    xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<html lang="en" xmlns:b="http://www.google.com/2005/gml/b" xmlns:data="http://www.google.com/2005/gml/data" xmlns:expr="http://www.google.com/2005/gml/expr">
 
 <head>
+    <b:skin><![CDATA[
+    ]]></b:skin>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Genius Song — A Practical Tool for Focus &amp; Clarity</title>
+    <title>The Genius Wave</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
     <link
-        href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&amp;family=Nunito+Sans:wght@400;600;700&amp;display=swap"
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700;1,800&amp;display=swap"
         rel="stylesheet" />
-
-    <b:skin>
-        <![CDATA[
-        /* ─── RESET & ROOT ─────────────────────────────── */
-        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-        :root {
-            --navy: #1a2d6b;
-            --navy-deep: #0f1d4a;
-            --blue: #1565c0;
-            --blue-mid: #1976d2;
-            --blue-light: #42a5f5;
-            --yellow: #ffe81a;
-            --yellow-dark: #e6d000;
-            --green: #22c55e;
-            --white: #ffffff;
-            --off-white: #f7fafd;
-            --gray-text: #374151;
-            --gray-light: #6b7280;
-            --hero-bg-from: #dce8f7;
-            --hero-bg-to: #eef4fb;
-            --font: 'Nunito', sans-serif;
-            --font-body: 'Nunito Sans', sans-serif;
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
         }
 
-        html { scroll-behavior: smooth; }
         body {
-            font-family: var(--font-body);
-            background: var(--white);
-            color: var(--gray-text);
-            font-size: 16px;
-            line-height: 1.7;
-            overflow-x: hidden;
-        }
-
-        /* ─── NAV ───────────────────────────────────────── */
-        nav {
-            background: var(--white);
-            border-bottom: 2px solid #e5eaf5;
-            padding: 0.85rem 2rem;
+            font-family: 'Open Sans', sans-serif;
+            background-color: #f4f5f7;
+            color: #000;
+            line-height: 1.6;
             display: flex;
-            align-items: center;
-            justify-content: space-between;
-            position: sticky;
-            top: 0;
-            z-index: 200;
-            box-shadow: 0 2px 12px rgba(26, 45, 107, 0.08);
+            flex-direction: column;
+            min-height: 100vh;
         }
 
-        .logo-box {
-            background: var(--navy);
-            color: var(--white);
-            font-family: var(--font);
-            font-weight: 900;
-            font-size: 0.75rem;
-            letter-spacing: 0.12em;
-            text-transform: uppercase;
-            padding: 0.55rem 0.85rem;
+        .header {
+            background-color: #1565c0; /* Genius Blue */
+            padding: 20px 15px;
             text-align: center;
-            text-decoration: none;
+            width: 100%;
         }
 
-        .logo-box span { display: block; }
-        .logo-box .big { font-size: 1.15rem; letter-spacing: 0.05em; }
-
-        .btn-yellow {
-            display: inline-block;
-            background: var(--yellow);
-            color: var(--navy-deep);
-            font-family: var(--font);
-            font-weight: 900;
-            font-size: 0.88rem;
-            letter-spacing: 0.1em;
-            text-transform: uppercase;
-            text-decoration: none;
-            padding: 0.75rem 1.8rem;
-            border-radius: 4px;
-            transition: background 0.18s, transform 0.12s;
-            box-shadow: 0 4px 14px rgba(255, 232, 26, 0.45);
-            border: none;
-            cursor: pointer;
-        }
-
-        .btn-yellow:hover { background: var(--yellow-dark); transform: translateY(-1px); }
-
-        /* ─── HERO ──────────────────────────────────────── */
-        .hero {
-            background: linear-gradient(135deg, var(--hero-bg-from) 0%, var(--hero-bg-to) 100%);
-            padding: 5rem 2rem;
-            text-align: left;
-        }
-
-        .hero-inner {
-            max-width: 1060px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 3rem;
-            align-items: center;
-        }
-
-        @media(max-width:760px) { .hero-inner { grid-template-columns: 1fr; text-align: center; } }
-
-        .hero h1 {
-            font-family: var(--font);
-            font-size: clamp(2.2rem, 5vw, 3.2rem);
-            font-weight: 900;
-            color: var(--navy);
-            line-height: 1.1;
-            margin-bottom: 1.5rem;
-        }
-
-        .hero p { font-size: 1.1rem; margin-bottom: 2rem; max-width: 540px; }
-
-        /* ─── SECTIONS ──────────────────────────────────── */
-        .section-wrap { max-width: 900px; margin: 0 auto; padding: 5rem 2rem; }
-        .section-tag {
-            display: inline-block;
-            color: var(--blue);
-            font-family: var(--font);
+        .header h1 {
+            color: #ffffff;
+            font-size: clamp(18px, 4vw, 24px);
             font-weight: 800;
-            font-size: 0.75rem;
-            letter-spacing: 0.15em;
+            font-style: italic;
             text-transform: uppercase;
-            margin-bottom: 1rem;
-        }
-        .section-h2 {
-            font-family: var(--font);
-            font-weight: 900;
-            font-size: 2.2rem;
-            color: var(--navy);
-            margin-bottom: 1.5rem;
-            line-height: 1.2;
+            letter-spacing: 0.5px;
+            max-width: 1200px;
+            margin: 0 auto;
         }
 
-        /* ─── CARDS ─────────────────────────────────────── */
-        .pain-grid, .steps-grid {
+        .main-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            flex-grow: 1;
+            width: 100%;
+        }
+
+        /* 66% / 33% Split to match Original Site perfectly */
+        .content-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 1.5rem;
-            margin-top: 3rem;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+            align-items: start;
         }
-        .card {
-            background: var(--off-white);
-            padding: 2rem;
-            border-radius: 12px;
-            border: 1px solid #e5eaf5;
-        }
-        .card h3 { font-family: var(--font); color: var(--navy); margin-bottom: 0.5rem; }
 
-        /* ─── PRICING ────────────────────────────────────── */
-        .pricing-card {
-            background: var(--white);
-            border: 2px solid var(--blue);
-            border-radius: 20px;
-            padding: 3rem 2rem;
+        @media (max-width: 900px) {
+            .content-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .left-col {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .right-col {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .subheading {
+            font-size: 18px;
+            font-weight: 700;
+            font-style: italic;
+            margin-bottom: 25px;
+        }
+
+        .paragraph {
+            font-size: 15px;
+            margin-bottom: 25px;
+            color: #222;
+        }
+
+        .paragraph strong {
+            font-weight: 700;
+        }
+
+        .text-theme {
+            color: #1565c0;
+        }
+
+        .text-theme-italic {
+            color: #1565c0;
+            font-style: italic;
+            font-weight: 700;
+        }
+
+        /* Images */
+        .testimonial-img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 25px;
+            border-radius: 4px;
+        }
+
+        .video-thumb {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .video-thumb:hover {
+            transform: scale(1.02);
+        }
+
+        /* Call To Action Button */
+        .cta-button {
+            display: inline-block;
+            background-color: #1565c0;
+            color: #ffffff;
+            text-transform: uppercase;
+            font-weight: 800;
+            font-style: italic;
+            font-size: 18px;
+            text-decoration: none;
+            padding: 20px 20px;
             text-align: center;
-            max-width: 500px;
-            margin: 3rem auto;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            transition: background-color 0.3s ease;
+            width: 100%;
+            box-shadow: 0 4px 15px rgba(21, 101, 192, 0.3);
         }
-        .price-big { font-size: 4rem; font-weight: 900; color: var(--navy); display: block; }
 
-        /* ─── FOOTER ─────────────────────────────────────── */
-        footer { background: var(--navy-deep); color: rgba(255,255,255,0.5); text-align: center; padding: 3rem 1rem; font-size: 0.85rem; }
-        footer a { color: var(--white); text-decoration: none; margin: 0 0.5rem; }
+        .cta-button:hover {
+            background-color: #0f4a8f;
+        }
 
-        /* ─── ANIMATIONS ─────────────────────────────────── */
-        .fade-up { opacity: 0; transform: translateY(20px); transition: 0.6s ease-out; }
-        .fade-up.visible { opacity: 1; transform: translateY(0); }
-    ]]>
-    </b:skin>
+        .cta-button span {
+            display: block;
+        }
+
+        .footer {
+            background-color: #000000;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 15px;
+            width: 100%;
+            margin-top: 40px;
+        }
+
+        .footer p {
+            font-size: 16px;
+            font-weight: 700;
+        }
+    </style>
 </head>
 
 <body>
-    <b:section id='main' showaddelement='no' />
 
-    <!-- NAVIGATION -->
-    <nav>
-        <a href="#" class="logo-box">
-            <span>THE</span>
-            <span class="big">GENIUS</span>
-            <span>SONG</span>
-        </a>
-        <a href="https://9fc242m6q3gtoi83r9vfx96pde.hop.clickbank.net/?&amp;traffic_source=blog&amp;traffic_type=organic&amp;tid=blogger"
-            class="btn-yellow">Get Started</a>
-    </nav>
+    <div style="display:none; visibility:hidden;">
+        <b:section id="main-blogger-section"></b:section>
+    </div>
 
-    <!-- HERO -->
-    <section class="hero">
-        <div class="hero-inner">
-            <div class="fade-up">
-                <span class="section-tag">A Practical Brain Tool</span>
-                <h1>Why does deep focus feel so hard lately?</h1>
-                <p>Most "productivity" hacks tell you to work harder. We're suggesting something different. 12 minutes
-                    of audio to help your brain find its natural flow.</p>
+    <header class="header">
+        <h1>7-MINUTE GENIUS WAVE RITUAL ACTIVATES YOUR THETA WAVES FOR MAXIMUM FOCUS</h1>
+    </header>
+
+    <main class="main-container">
+        <div class="content-grid">
+            <!-- Left Column (66%) -->
+            <div class="left-col">
+                <p class="subheading">Struggling With Deep Focus Or Brain Fog? This 7-Minute At-Home Ritual Is Something
+                    You'll Want To Try...</p>
+
+                <p class="paragraph">
+                    <strong class="text-theme">The Genius Wave Ritual</strong> Is An Easy Daily Ritual Designed To
+                    Target Your Theta Brainwaves Helping Your Mind Find Its Natural Flow. Thanks To This
+                    <strong class="text-theme">7-Minute Ritual</strong>, Thousands Of People Have Replaced Distraction
+                    With Clarity And Focus.
+                </p>
+
+                <!-- Testimonial Image matching reference -->
+                <img src="testimonial.png" alt="Testimonial for The Genius Wave" class="testimonial-img" />
+
+                <p class="paragraph">
+                    Today Only, First-Time <span class="text-theme-italic">The Genius Wave</span> Customers Can Secure
+                    <strong class="text-theme-italic">A Special Discount</strong> (At Checkout), <strong>Free
+                        Bonuses</strong> And A <strong>90-Day Money-Back Guarantee.</strong>
+                </p>
+
+                <p class="paragraph" style="font-weight: 700; font-style: italic;">
+                    You Don't Want To Regret Not Trying This Ritual.
+                </p>
+            </div>
+
+            <!-- Right Column (33%) -->
+            <div class="right-col">
+                <!-- Video Thumbnail Image matching reference -->
+                <a
+                    href="https://9fc242m6q3gtoi83r9vfx96pde.hop.clickbank.net/?&amp;traffic_source=blog&amp;traffic_type=organic&amp;tid=blogger">
+                    <img src="video-thumb.png" alt="Watch Video" class="video-thumb" />
+                </a>
+
                 <a href="https://9fc242m6q3gtoi83r9vfx96pde.hop.clickbank.net/?&amp;traffic_source=blog&amp;traffic_type=organic&amp;tid=blogger"
-                    class="btn-yellow" style="font-size: 1.1rem; padding: 1.2rem 2.5rem;">Start Listening Today</a>
-                <p style="font-size: 0.85rem; color: var(--gray-light); margin-top: 1rem;">⚡ Limited Launch Offer: 60%
-                    Off Individual Access</p>
-            </div>
-            <div class="fade-up" style="text-align: center;">
-                <!-- Placeholder for Image or Visual -->
-                <div
-                    style="background: var(--white); border-radius: 50%; width: 300px; height: 300px; margin: 0 auto; display: flex; align-items: center; justify-content: center; box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
-                    <span style="font-size: 8rem; filter: drop-shadow(0 0 15px rgba(0,0,0,0.1));">🧠</span>
-                </div>
+                    class="cta-button">
+                    <span>CLICK TO LEARN HOW THE GENIUS</span>
+                    <span>WAVE SUPPORTS YOUR THETA WAVES</span>
+                    <span>AND TRY THIS RITUAL!</span>
+                </a>
             </div>
         </div>
-    </section>
+    </main>
 
-    <!-- PROBLEM -->
-    <section class="section-wrap">
-        <span class="section-tag">The Reality Check</span>
-        <h2 class="section-h2">You aren't lazy. You're just competing with everything.</h2>
-        <p>In a world designed to distract you, "willpower" isn't enough. If any of this sounds familiar, your brain
-            might just need a reset:</p>
-        <div class="pain-grid">
-            <div class="card fade-up">
-                <h3>The 2 PM Wall</h3>
-                <p>That dense brain fog that makes even simple emails feel like a chore.</p>
-            </div>
-            <div class="card fade-up">
-                <h3>The Tab Loop</h3>
-                <p>Flipping between five different things and finishing none of them.</p>
-            </div>
-            <div class="card fade-up">
-                <h3>Wait, What Was I Doing?</h3>
-                <p>Sitting down to work and realizing 30 minutes passed on your phone instead.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- HOW IT WORKS -->
-    <section class="section-wrap" style="background: var(--off-white); border-radius: 40px;">
-        <span class="section-tag">How it works</span>
-        <h2 class="section-h2">A Simple Daily Audit for Your Mind.</h2>
-        <p>This isn't a "miracle" frequency. It's brainwave entrainment—a documented method of using sound to nudge your
-            neural activity toward <strong>Theta and Gamma</strong> states associated with clarity.</p>
-        <div class="steps-grid">
-            <div class="fade-up">
-                <strong style="font-size: 1.5rem; color: var(--blue);">01.</strong>
-                <h3>Plug In</h3>
-                <p>Put on your favorite pair of headphones (stereo is necessary).</p>
-            </div>
-            <div class="fade-up">
-                <strong style="font-size: 1.5rem; color: var(--blue);">02.</strong>
-                <h3>Press Play</h3>
-                <p>Listen to the 12-minute session while you sit quietly or prepare your workspace.</p>
-            </div>
-            <div class="fade-up">
-                <strong style="font-size: 1.5rem; color: var(--blue);">03.</strong>
-                <h3>Work Better</h3>
-                <p>Let your brain sync naturally. Most users feel "tuned in" within minutes.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- BENEFITS -->
-    <section class="section-wrap">
-        <span class="section-tag">Realistic Benefits</span>
-        <h2 class="section-h2">What actually happens?</h2>
-        <p>We're not promising you'll become Einstein. But professionals and students who use it daily tend to report:
-        </p>
-        <ul style="list-style: none; margin-top: 2rem; display: grid; gap: 1rem;">
-            <li class="fade-up" style="background: var(--off-white); padding: 1rem 1.5rem; border-radius: 10px;">✅
-                <strong>Lower Friction:</strong> It's simply easier to start that "big task" you've been avoiding.
-            </li>
-            <li class="fade-up" style="background: var(--off-white); padding: 1rem 1.5rem; border-radius: 10px;">✅
-                <strong>Sustained Energy:</strong> Less of that frantic, caffeine-fueled anxiety; more calm focus.
-            </li>
-            <li class="fade-up" style="background: var(--off-white); padding: 1rem 1.5rem; border-radius: 10px;">✅
-                <strong>Creative Sparks:</strong> Mental blocks feel more like speed bumps than brick walls.
-            </li>
-        </ul>
-    </section>
-
-    <!-- TESTIMONIALS -->
-    <section class="section-wrap" style="background: #eef4fb;">
-        <span class="section-tag">User Experiences</span>
-        <h2 class="section-h2">Words from skeptical people.</h2>
-        <div class="pain-grid">
-            <div class="card fade-up" style="background: var(--white);">
-                <p>"I didn't think sounds could do much. But it's become my 'pre-game' ritual before coding. Just
-                    clarifies the noise."</p>
-                <p style="margin-top:1rem; font-weight:700;">— David L., Software Dev</p>
-            </div>
-            <div class="card fade-up" style="background: var(--white);">
-                <p>"Used it during finals. It didn't study for me, but it definitely stopped me from spiraling into
-                    panic mode."</p>
-                <p style="margin-top:1rem; font-weight:700;">— Priya S., Grad Student</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- OBJECTIONS -->
-    <section class="section-wrap">
-        <h2 class="section-h2">Is this legal magic?</h2>
-        <p>No. And it's not a magic fix for your life either. It's a tool, like a cup of coffee or a good night's sleep.
-            Some brains respond quickly, others don't. We'd rather you treat this as a <strong>low-risk
-                experiment</strong> than a miracle cure.</p>
-        <p style="margin-top:1.5rem; color: var(--gray-light); font-style: italic;">*Results vary. Not a substitute for
-            professional mental health advice.</p>
-    </section>
-
-    <!-- FINAL CTA -->
-    <section id="get" class="section-wrap">
-        <div class="pricing-card fade-up">
-            <span class="section-tag">One-Time Purchase</span>
-            <h2 class="section-h2">The Genius Song Bundle</h2>
-            <p>Full 12-minute session + Quick 7-minute 'Refresher'</p>
-            <span class="price-big">$39</span>
-            <p style="margin-bottom: 2rem; text-decoration: line-through; opacity: 0.5;">Was $99</p>
-            <a href="https://9fc242m6q3gtoi83r9vfx96pde.hop.clickbank.net/?&amp;traffic_source=blog&amp;traffic_type=organic&amp;tid=blogger"
-                class="btn-yellow" style="width: 100%; font-size: 1.2rem; padding: 1.2rem;">Get Instant Access</a>
-            <p style="margin-top: 1.5rem; font-size: 0.85rem;">Digital Download · Lifetime Access · 90-Day Guarantee</p>
-        </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer>
-        <p>&#169; 2026 The Genius Song. All rights reserved.</p>
-        <div style="margin: 1.5rem 0;">
-            <a href="https://geniussongoriginal.com/TOS/">Privacy Policy</a> | <a
-                href="https://geniussongoriginal.com/TOS/?#terms">Terms of Use</a> | <a
-                href="mailto:info@binauraltechnologies.com">Contact</a>
-        </div>
-        <p style="opacity: 0.4; font-size: 0.7rem; max-width: 600px; margin: 0 auto;">Disclaimer: The Genius Song is a
-            wellness audio tool. It is not intended to treat, cure or prevent any disease. This is a digital product; no
-            physical components will be shipped. Your purchase is secure and backed by our satisfaction guarantee.</p>
+    <footer class="footer">
+        <p>&#169; 2026 The Genius Wave&#160;&#160;All Rights Reserved.</p>
     </footer>
 
-    <script>
-        /* <![CDATA[ */
-        // Reveal on scroll
-        const obs = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
-        }, { threshold: 0.1 });
-
-        document.querySelectorAll('.fade-up').forEach(el => obs.observe(el));
-        /* ]]> */
-    </script>
 </body>
 
 </html>
