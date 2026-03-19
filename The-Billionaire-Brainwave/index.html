@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:b="http://www.google.com/2005/gml/b" xmlns:data="http://www.google.com/2005/gml/data" xmlns:expr="http://www.google.com/2005/gml/expr">
+
+<head>
+    <b:skin><![CDATA[
+    ]]></b:skin>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Billionaire Brain Wave</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700;1,800&amp;display=swap"
+        rel="stylesheet" />
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #f4f5f7;
+            color: #000;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .header {
+            background-color: #008c27;
+            padding: 20px 15px;
+            text-align: center;
+            width: 100%;
+        }
+
+        .header h1 {
+            color: #ffffff;
+            font-size: clamp(18px, 4vw, 24px);
+            font-weight: 800;
+            font-style: italic;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .main-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            flex-grow: 1;
+            width: 100%;
+        }
+
+        /* 66% / 33% Split to match Original Site perfectly */
+        .content-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+            align-items: start;
+        }
+
+        @media (max-width: 900px) {
+            .content-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .left-col {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .right-col {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .subheading {
+            font-size: 18px;
+            font-weight: 700;
+            font-style: italic;
+            margin-bottom: 25px;
+        }
+
+        .paragraph {
+            font-size: 15px;
+            margin-bottom: 25px;
+            color: #222;
+        }
+
+        .paragraph strong {
+            font-weight: 700;
+        }
+
+        .text-green {
+            color: #008c27;
+        }
+
+        .text-green-italic {
+            color: #008c27;
+            font-style: italic;
+            font-weight: 700;
+        }
+
+        /* Images */
+        .testimonial-img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 25px;
+            border-radius: 4px;
+        }
+
+        .video-thumb {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .video-thumb:hover {
+            transform: scale(1.02);
+        }
+
+        /* Call To Action Button */
+        .cta-button {
+            display: inline-block;
+            background-color: #008c27;
+            color: #ffffff;
+            text-transform: uppercase;
+            font-weight: 800;
+            font-style: italic;
+            font-size: 18px;
+            text-decoration: none;
+            padding: 20px 20px;
+            text-align: center;
+            transition: background-color 0.3s ease;
+            width: 100%;
+            box-shadow: 0 4px 15px rgba(0, 140, 39, 0.3);
+        }
+
+        .cta-button:hover {
+            background-color: #006b1e;
+        }
+
+        .cta-button span {
+            display: block;
+        }
+
+        .footer {
+            background-color: #000000;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 15px;
+            width: 100%;
+            margin-top: 40px;
+        }
+
+        .footer p {
+            font-size: 16px;
+            font-weight: 700;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div style="display:none; visibility:hidden;">
+        <b:section id="main-blogger-section"></b:section>
+    </div>
+
+    <header class="header">
+        <h1>7-MINUTE BRAIN WAVE RITUAL ACTIVATES YOUR BILLIONAIRE BRAIN WAVE TO ATTRACT MONEY</h1>
+    </header>
+
+    <main class="main-container">
+        <div class="content-grid">
+            <!-- Left Column (66%) -->
+            <div class="left-col">
+                <p class="subheading">Struggling With Bills Or Stubborn Debt? This 7-Minute At-Home Ritual Is Something
+                    You'll Want To Try...</p>
+
+                <p class="paragraph">
+                    <strong class="text-green">Billionaire Brain Wave Ritual</strong> Is An Easy Daily Ritual Designed To
+                    Target Your Hippocampus Helping Your Brain Produce More Theta Waves. Thanks To This
+                    <strong class="text-green">7-Minute Ritual</strong>, Thousands Of People Have Replaced Stressful
+                    Debt With A Life Of Abundance.
+                </p>
+
+                <!-- Testimonial Image matching reference -->
+                <img src="testimonial.png" alt="Testimonial for Billionaire Brain Wave" class="testimonial-img" />
+
+                <p class="paragraph">
+                    Today Only, First-Time <span class="text-green-italic">Billionaire Brain Wave</span> Customers Can Secure
+                    <strong class="text-green-italic">A Special Discount</strong> (At Checkout), <strong>Free
+                        Bonuses</strong> And A <strong>90-Day Money-Back Guarantee.</strong>
+                </p>
+
+                <p class="paragraph" style="font-weight: 700; font-style: italic;">
+                    You Don't Want To Regret Not Trying This Ritual.
+                </p>
+            </div>
+
+            <!-- Right Column (33%) -->
+            <div class="right-col">
+                <!-- Video Thumbnail Image matching reference -->
+                <a
+                    href="https://thebillionairebrainwave.com/?hopId=106a137e-40e1-4c23-b564-29089c8b9175&amp;&amp;traffic_source=instagram&amp;ad=ad5">
+                    <img src="video-thumb.png" alt="Watch Video" class="video-thumb" />
+                </a>
+
+                <a href="https://thebillionairebrainwave.com/?hopId=106a137e-40e1-4c23-b564-29089c8b9175&amp;&amp;traffic_source=instagram&amp;ad=ad5"
+                    class="cta-button">
+                    <span>CLICK TO LEARN HOW THE BILLIONAIRE</span>
+                    <span>BRAIN WAVE SUPPORTS YOUR HIPPOCAMPUS</span>
+                    <span>AND TRY THIS RITUAL!</span>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&#169; 2026 The Billionaire Brain Wave&#160;&#160;All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>
