@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:b="http://www.google.com/2005/gml/b" xmlns:data="http://www.google.com/2005/gml/data" xmlns:expr="http://www.google.com/2005/gml/expr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Make Money Online — This Changes Everything</title>
+    <b:skin><![CDATA[]]></b:skin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&amp;family=Open+Sans:wght@400;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --red: #e0000f;
+            --yellow: #ffe600;
+            --green: #00b300;
+            --green-dark: #008000;
+            --black: #0a0a0a;
+            --white: #ffffff;
+            --gray-bg: #f5f5f5;
+            --dark-bg: #111111;
+        }
+
+        body {
+            font-family: 'Open Sans', Arial, sans-serif;
+            background: var(--white);
+            color: var(--black);
+            line-height: 1.5;
+            overflow-x: hidden;
+        }
+
+        /* Hide the Blogger auto-generated section to fix white gap */
+        #main {
+            display: none !important;
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+
+        /* ── UTILITIES ── */
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .red {
+            color: var(--red);
+        }
+
+        .yellow-bg {
+            background: var(--yellow);
+            padding: 2px 6px;
+        }
+
+        .bold {
+            font-weight: 700;
+        }
+
+        .upper {
+            text-transform: uppercase;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        /* ── TOP BAR ── */
+        .top-bar {
+            background: var(--red);
+            color: var(--white);
+            text-align: center;
+            padding: 10px 20px;
+            font-family: 'Oswald', sans-serif;
+            font-size: 1rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            animation: pulse-bar 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse-bar {
+
+            0%,
+            100% {
+                opacity: 1
+            }
+
+            50% {
+                opacity: .85
+            }
+        }
+
+        /* ── HERO ── */
+        .hero {
+            background: var(--black);
+            color: var(--white);
+            padding: 60px 20px 50px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: repeating-linear-gradient(45deg, transparent, transparent 40px,
+                    rgba(224, 0, 15, .04) 40px, rgba(224, 0, 15, .04) 41px);
+        }
+
+        .hero-eyebrow {
+            font-family: 'Oswald', sans-serif;
+            font-size: .9rem;
+            letter-spacing: 3px;
+            color: var(--yellow);
+            text-transform: uppercase;
+            margin-bottom: 18px;
+        }
+
+        .hero h1 {
+            font-family: 'Oswald', sans-serif;
+            font-size: clamp(2rem, 5.5vw, 3.6rem);
+            font-weight: 700;
+            line-height: 1.15;
+            max-width: 780px;
+            margin: 0 auto 22px;
+            text-transform: uppercase;
+        }
+
+        .hero h1 .accent {
+            color: var(--red);
+        }
+
+        .hero-sub {
+            font-size: clamp(1rem, 2.5vw, 1.25rem);
+            max-width: 620px;
+            margin: 0 auto 36px;
+            color: #ddd;
+        }
+
+        .hero-sub strong {
+            color: var(--yellow);
+        }
+
+        /* ── CTA BUTTON ── */
+        .cta-btn {
+            display: inline-block;
+            background: var(--green);
+            color: var(--white);
+            font-family: 'Oswald', sans-serif;
+            font-size: 1.35rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            padding: 20px 46px;
+            border-radius: 6px;
+            text-decoration: none;
+            position: relative;
+            box-shadow: 0 6px 0 var(--green-dark), 0 8px 20px rgba(0, 179, 0, .4);
+            transition: transform .15s, box-shadow .15s;
+            cursor: pointer;
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 9px 0 var(--green-dark), 0 12px 28px rgba(0, 179, 0, .5);
+        }
+
+        .cta-btn:active {
+            transform: translateY(2px);
+            box-shadow: 0 3px 0 var(--green-dark);
+        }
+
+        .cta-btn.red-btn {
+            background: var(--red);
+            box-shadow: 0 6px 0 #900, 0 8px 20px rgba(224, 0, 15, .4);
+        }
+
+        .cta-btn.red-btn:hover {
+            box-shadow: 0 9px 0 #900, 0 12px 28px rgba(224, 0, 15, .5);
+        }
+
+        .cta-sub-text {
+            display: block;
+            font-size: .75rem;
+            font-weight: 400;
+            letter-spacing: .5px;
+            margin-top: 5px;
+            opacity: .9;
+        }
+
+        .arrow-down {
+            font-size: 2rem;
+            line-height: 1;
+            margin-bottom: 10px;
+            animation: bounce 1.2s ease-in-out infinite;
+            display: block;
+        }
+
+        @keyframes bounce {
+
+            0%,
+            100% {
+                transform: translateY(0)
+            }
+
+            50% {
+                transform: translateY(8px)
+            }
+        }
+
+        /* ── SECTION BASE ── */
+        .section {
+            padding: 60px 20px;
+        }
+
+        .section-dark {
+            background: var(--dark-bg);
+            color: var(--white);
+        }
+
+        .section-gray {
+            background: var(--gray-bg);
+        }
+
+        .section-yellow {
+            background: var(--yellow);
+        }
+
+        .section-title {
+            font-family: 'Oswald', sans-serif;
+            font-size: clamp(1.6rem, 4vw, 2.6rem);
+            font-weight: 700;
+            text-transform: uppercase;
+            line-height: 1.2;
+            margin-bottom: 22px;
+        }
+
+        .divider {
+            height: 5px;
+            background: linear-gradient(90deg, var(--red), var(--yellow));
+            border: none;
+            margin: 0;
+        }
+
+        /* ── PAIN SECTION ── */
+        .pain-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+            margin-bottom: 18px;
+            background: #fff;
+            border-left: 5px solid var(--red);
+            padding: 14px 18px;
+            border-radius: 4px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, .07);
+        }
+
+        .pain-icon {
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+
+        .pain-text {
+            font-size: 1.05rem;
+        }
+
+        .pain-text strong {
+            color: var(--red);
+        }
+
+        /* ── AGITATION ── */
+        .agit-box {
+            background: #1a0000;
+            border: 2px solid var(--red);
+            border-radius: 8px;
+            padding: 30px 28px;
+            margin-top: 24px;
+        }
+
+        .agit-box p {
+            margin-bottom: 14px;
+            color: #eee;
+            font-size: 1.05rem;
+        }
+
+        .agit-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* ── SOLUTION ── */
+        .solution-badge {
+            display: inline-block;
+            background: var(--red);
+            color: var(--white);
+            font-family: 'Oswald', sans-serif;
+            font-size: .85rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            padding: 6px 18px;
+            border-radius: 30px;
+            margin-bottom: 20px;
+        }
+
+        .highlight-box {
+            background: var(--yellow);
+            border-radius: 6px;
+            padding: 22px 26px;
+            margin: 24px 0;
+            border-left: 6px solid var(--black);
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--black);
+        }
+
+        /* ── BENEFITS ── */
+        .benefits-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            margin-top: 28px;
+        }
+
+        .benefit-item {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            background: var(--white);
+            border-radius: 6px;
+            padding: 16px 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, .08);
+            border-left: 5px solid var(--green);
+            font-size: 1.05rem;
+        }
+
+        .benefit-check {
+            width: 34px;
+            height: 34px;
+            background: var(--green);
+            color: var(--white);
+            font-size: 1.2rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        /* ── TESTIMONIALS ── */
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 22px;
+            margin-top: 28px;
+        }
+
+        @media(min-width:600px) {
+            .testimonial-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .testimonial-card {
+            background: var(--white);
+            border-radius: 8px;
+            padding: 22px;
+            box-shadow: 0 3px 14px rgba(0, 0, 0, .1);
+            position: relative;
+        }
+
+        .testimonial-card::before {
+            content: '"';
+            font-family: Georgia, serif;
+            font-size: 5rem;
+            color: var(--yellow);
+            position: absolute;
+            top: -10px;
+            left: 14px;
+            line-height: 1;
+        }
+
+        .testimonial-text {
+            font-size: .97rem;
+            margin-bottom: 14px;
+            padding-top: 28px;
+            color: #222;
+        }
+
+        .testimonial-name {
+            font-weight: 700;
+            color: var(--red);
+            font-size: .9rem;
+        }
+
+        .testimonial-result {
+            display: inline-block;
+            background: var(--green);
+            color: var(--white);
+            font-weight: 700;
+            font-size: .8rem;
+            padding: 3px 10px;
+            border-radius: 20px;
+            margin-top: 8px;
+        }
+
+        /* ── BONUS ── */
+        .bonus-item {
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+            background: #fff;
+            border: 2px dashed var(--green);
+            border-radius: 8px;
+            padding: 18px;
+            margin-bottom: 16px;
+        }
+
+        .bonus-num {
+            background: var(--red);
+            color: var(--white);
+            font-family: 'Oswald', sans-serif;
+            font-size: 1.3rem;
+            font-weight: 700;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .bonus-content h4 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 1.1rem;
+            color: var(--red);
+            margin-bottom: 5px;
+        }
+
+        .bonus-value {
+            font-size: .85rem;
+            color: #888;
+            text-decoration: line-through;
+        }
+
+        .bonus-free {
+            color: var(--green);
+            font-weight: 700;
+            font-size: .95rem;
+        }
+
+        /* ── SCARCITY ── */
+        .scarcity-box {
+            background: var(--red);
+            color: var(--white);
+            border-radius: 8px;
+            padding: 30px 28px;
+            text-align: center;
+        }
+
+        .scarcity-box h3 {
+            font-family: 'Oswald', sans-serif;
+            font-size: clamp(1.4rem, 3.5vw, 2rem);
+            text-transform: uppercase;
+            margin-bottom: 14px;
+        }
+
+        .price-old {
+            font-size: 1.3rem;
+            text-decoration: line-through;
+            opacity: .7;
+        }
+
+        .price-new {
+            font-size: 2.6rem;
+            font-weight: 700;
+            font-family: 'Oswald', sans-serif;
+            color: var(--yellow);
+        }
+
+        .spots-bar-wrap {
+            background: rgba(255, 255, 255, .2);
+            border-radius: 30px;
+            height: 18px;
+            margin: 18px 0 8px;
+            overflow: hidden;
+        }
+
+        .spots-bar {
+            background: var(--yellow);
+            height: 100%;
+            border-radius: 30px;
+            width: 78%;
+        }
+
+        .spots-text {
+            font-size: .9rem;
+            opacity: .9;
+        }
+
+        /* ── FINAL CTA ── */
+        .final-cta {
+            background: var(--black);
+            color: var(--white);
+            text-align: center;
+            padding: 70px 20px;
+        }
+
+        .final-cta .section-title {
+            color: var(--white);
+        }
+
+        /* ── FOOTER ── */
+        .footer {
+            background: #111;
+            color: #888;
+            text-align: center;
+            padding: 24px 20px;
+            font-size: .78rem;
+            line-height: 1.8;
+        }
+
+        .footer a {
+            color: #aaa;
+        }
+
+        /* ── GUARANTEE ── */
+        .guarantee-box {
+            border: 3px solid var(--green);
+            border-radius: 8px;
+            padding: 24px;
+            text-align: center;
+            margin-top: 28px;
+            background: #f0fff0;
+        }
+
+        .guarantee-box .shield {
+            font-size: 3rem;
+        }
+
+        .guarantee-box h4 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 1.3rem;
+            color: var(--green-dark);
+            margin: 8px 0 6px;
+        }
+
+        /* CTA wrapper */
+        .cta-wrap {
+            text-align: center;
+            margin: 36px 0 10px;
+        }
+
+        .cta-note {
+            font-size: .82rem;
+            color: #777;
+            margin-top: 10px;
+        }
+
+        .cta-note.light {
+            color: #aaa;
+        }
+    </style>
+</head>
+
+<body>
+    <b:section id='main' class='main'></b:section>
+
+    <!-- TOP BAR -->
+    <div class="top-bar">
+        ⚠️ WARNING: This Page Will Be Taken Down Soon — Read Every Word Before It's Gone ⚠️
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════
+     SECTION 1: HERO
+═══════════════════════════════════════════════════ -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-eyebrow">🔥 Discovered By Accident — Now Going Viral</div>
+            <h1>
+                This <span class="accent">WEIRD LOOPHOLE</span> Is Making Complete Beginners
+                <span class="accent">$200–$500 A Day</span> Online
+                — With <span style="color:var(--yellow)">ZERO Experience</span>
+            </h1>
+            <p class="hero-sub">
+                No website. No social media following. No tech skills. No selling.
+                <strong>Just copy → paste → profit.</strong> Even if you've NEVER made a single dollar online.
+            </p>
+            <span class="arrow-down">⬇</span>
+            <a href="https://warriorplus.com/o2/a/f5ppzd3/0" class="cta-btn" target="_blank" rel="noopener">
+                ⚡ GET INSTANT ACCESS NOW
+                <span class="cta-sub-text">👆 Click Before This Page Is Taken Down</span>
+            </a>
+            <p class="cta-note light" style="margin-top:14px;">🔒 Secure Access &#160;|&#160; Instant Delivery
+                &#160;|&#160; Works Worldwide</p>
+        </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- ═══════════════════════════════════════════════════
+     SECTION 2: PAIN POINTS
+═══════════════════════════════════════════════════ -->
+    <section class="section section-gray">
+        <div class="container">
+            <h2 class="section-title center">
+                STILL <span class="red">STRUGGLING</span> To Make Money Online?<br />
+                You're Not Alone. <span class="red">But It's Not Your Fault.</span>
+            </h2>
+            <p style="text-align:center;margin-bottom:30px;font-size:1.05rem;color:#444;">
+                Be honest with yourself. Have any of these happened to you?
+            </p>
+
+            <div class="pain-item">
+                <div class="pain-icon">😤</div>
+                <div class="pain-text">You've tried dropshipping, affiliate marketing, freelancing — and <strong>NOTHING
+                        WORKED.</strong> You're still at zero.</div>
+            </div>
+            <div class="pain-item">
+                <div class="pain-icon">💸</div>
+                <div class="pain-text">You spent money on <strong>COURSES, TOOLS, AND GURUS</strong> who promised the
+                    world… and delivered nothing.</div>
+            </div>
+            <div class="pain-item">
+                <div class="pain-icon">😴</div>
+                <div class="pain-text">You're wasting your life working a dead-end 9-to-5 while watching others post
+                    <strong>INCOME SCREENSHOTS</strong> online.</div>
+            </div>
+            <div class="pain-item">
+                <div class="pain-icon">🤯</div>
+                <div class="pain-text">You're CONFUSED, OVERWHELMED, and don't know where to even <strong>START
+                        anymore.</strong></div>
+            </div>
+            <div class="pain-item">
+                <div class="pain-icon">😰</div>
+                <div class="pain-text">Every month that passes means <strong>MORE BILLS, MORE STRESS,</strong> and less
+                    time to turn things around.</div>
+            </div>
+
+            <div class="cta-wrap">
+                <a href="https://warriorplus.com/o2/a/f5ppzd3/0" class="cta-btn" target="_blank" rel="noopener">
+                    ✅ YES — I Want To Finally Fix This
+                </a>
+                <p class="cta-note">No experience needed. Works for total beginners.</p>
+            </div>
+        </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- ═══════════════════════════════════════════════════
+     SECTION 3: AGITATION
+═══════════════════════════════════════════════════ -->
+    <section class="section section-dark">
+        <div class="container">
+            <h2 class="section-title center" style="color:var(--white);">
+                Here's <span class="red">WHY Everything</span> You've Tried Has <span class="red">FAILED</span>
+            </h2>
+            <div class="agit-box">
+                <p>
+                    The "gurus" are LYING to you. They sell you complicated systems that require months of setup,
+                    thousands of dollars in ad spend, and skills most people simply <strong>don't have.</strong>
+                </p>
+                <p>
+                    Dropshipping? You need capital, suppliers, and a store. <strong>Most beginners LOSE money.</strong>
+                </p>
+                <p>
+                    YouTube/TikTok? You need to film, edit, post every single day for MONTHS before seeing a cent. <span
+                        style="color:var(--yellow)">Who has time for that?</span>
+                </p>
+                <p>
+                    Freelancing? You're trading time for money. No clients = no income. You're stuck
+                    <strong>FOREVER.</strong>
+                </p>
+                <p>
+                    The truth is — these methods are designed for people who <em>already have money and
+                        connections.</em> Not for people who are just starting out.
+                </p>
+                <p style="color:var(--yellow);font-weight:700;font-size:1.1rem;">
+                    ➤ What if there was a SHORTCUT that bypasses ALL of that?
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- ═══════════════════════════════════════════════════
+     SECTION 4: SOLUTION
+═══════════════════════════════════════════════════ -->
+    <section class="section">
+        <div class="container center">
+            <span class="solution-badge">🚨 Introducing The Breakthrough</span>
+            <h2 class="section-title">
+                Finally. A <span class="red">DONE-FOR-YOU SYSTEM</span><br />
+                That Even A Complete Beginner Can Use Today
+            </h2>
+            <p style="font-size:1.1rem;color:#333;max-width:660px;margin:0 auto 24px;">
+                This isn't another course you'll never finish. This is a <strong>plug-and-play money system</strong> so
+                simple that if you can copy and paste, you can do this.
+            </p>
+
+            <div class="highlight-box" style="text-align:left;">
+                ✅ &#160;<strong>NO website needed.</strong> We handle all the tech.<br /><br />
+                ✅ &#160;<strong>NO prior experience.</strong> Start from absolute zero.<br /><br />
+                ✅ &#160;<strong>NO big investment.</strong> Start for next to nothing.<br /><br />
+                ✅ &#160;<strong>FULL step-by-step training</strong> shows you exactly what to do.
+            </div>
+
+            <p style="font-size:1.05rem;color:#333;margin:0 auto 10px;max-width:660px;">
+                Real beginners are activating this system and seeing results <span class="yellow-bg"><strong>within
+                        their first 24–48 hours.</strong></span> No guesswork. No waiting months for results.
+            </p>
+
+            <div class="cta-wrap">
+                <a href="https://warriorplus.com/o2/a/f5ppzd3/0" class="cta-btn" target="_blank" rel="noopener">
+                    🔓 UNLOCK THE SYSTEM NOW
+                    <span class="cta-sub-text">Instant access — start in the next 5 minutes</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- ═══════════════════════════════════════════════════
+     SECTION 5: BENEFITS
+═══════════════════════════════════════════════════ -->
+    <section class="section section-gray">
+        <div class="container">
+            <h2 class="section-title center">
+                Here's <span class="red">EXACTLY</span> What You're Getting
+            </h2>
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <div class="benefit-check">✓</div>
+                    <div><strong>INSTANT RESULTS:</strong> The system is designed to generate your first commissions
+                        within 24 hours — not weeks, not months. <em>Today.</em></div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-check">✓</div>
+                    <div><strong>ZERO TECH SKILLS NEEDED:</strong> If you can send an email and watch a video, you have
+                        all the skills required. Seriously.</div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-check">✓</div>
+                    <div><strong>WORKS WORLDWIDE:</strong> Doesn't matter if you're in the US, UK, India, Nigeria, or
+                        anywhere else. This system works globally.</div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-check">✓</div>
+                    <div><strong>COMPLETE STEP-BY-STEP SYSTEM:</strong> Every single step is laid out for you. Follow
+                        the checklist and the money follows.</div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-check">✓</div>
+                    <div><strong>PASSIVE INCOME POTENTIAL:</strong> Set it up once and let it run. Wake up to
+                        commissions without doing anything extra.</div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-check">✓</div>
+                    <div><strong>100% BEGINNER FRIENDLY:</strong> Built specifically for people who have NEVER made
+                        money online before. No prior knowledge assumed.</div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-check">✓</div>
+                    <div><strong>SCALABLE TO $500+/DAY:</strong> Once you get the basics down, you can scale this up as
+                        big as you want, as fast as you want.</div>
+                </div>
+            </div>
+
+            <div class="cta-wrap">
+                <span class="arrow-down" style="color:var(--red);">⬇</span>
+                <a href="https://warriorplus.com/o2/a/f5ppzd3/0" class="cta-btn" target="_blank" rel="noopener">
+                    🚀 START EARNING TODAY — GET ACCESS
+                    <span class="cta-sub-text">Limited spots available at this price</span>
+                </a>
+                <p class="cta-note">⏱️ Takes less than 10 minutes to set up</p>
+            </div>
+        </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- ═══════════════════════════════════════════════════
+     SECTION 7: SOCIAL PROOF / TESTIMONIALS
+═══════════════════════════════════════════════════ -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title center">
+                Real People. <span class="red">REAL RESULTS.</span><br />
+                <span style="font-size:.7em;text-transform:none;font-weight:400;color:#555;">Here's what beginners are
+                    saying after just days of using this system…</span>
+            </h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">
+                        "I was skeptical at first. I've tried so many things. But I followed the steps exactly and made
+                        my first $217 within 36 hours. I literally cried. This is the real deal."
+                    </p>
+                    <div class="testimonial-name">— Marcus T., Ohio (formerly unemployed)</div>
+                    <span class="testimonial-result">💰 $217 in 36 hours</span>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">
+                        "Complete beginner here. Zero tech skills. I spent ONE afternoon setting this up and woke up to
+                        a $147 commission the next morning. I keep pinching myself!"
+                    </p>
+                    <div class="testimonial-name">— Priya S., Mumbai, India</div>
+                    <span class="testimonial-result">💰 $147 first day</span>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">
+                        "I've been at this for 3 weeks now and I'm averaging $340 per day. I quit my job last Friday.
+                        This changed my life. If you're on the fence — just do it."
+                    </p>
+                    <div class="testimonial-name">— Daniel R., Manchester, UK</div>
+                    <span class="testimonial-result">💰 $340/day average</span>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">
+                        "I'm a stay-at-home mom with no business experience. I was struggling to pay bills. This gave me
+                        $1,240 in my first week. My husband doesn't believe it's real yet 😂"
+                    </p>
+                    <div class="testimonial-name">— Samantha K., Texas</div>
+                    <span class="testimonial-result">💰 $1,240 in week 1</span>
+                </div>
+            </div>
+
+            <div class="cta-wrap">
+                <a href="https://warriorplus.com/o2/a/f5ppzd3/0" class="cta-btn" target="_blank" rel="noopener">
+                    ✅ I WANT RESULTS LIKE THESE
+                    <span class="cta-sub-text">Click here to get instant access now</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- ═══════════════════════════════════════════════════
+     SECTION 8: BONUSES
+═══════════════════════════════════════════════════ -->
+    <section class="section section-gray">
+        <div class="container">
+            <h2 class="section-title center">
+                WAIT — You Also Get These
+                <span class="red">FREE BONUSES</span> Today Only
+            </h2>
+            <p style="text-align:center;margin-bottom:28px;font-size:1.05rem;color:#444;">
+                Order through this page and you get <strong>$497 worth of bonuses</strong> — absolutely FREE:
+            </p>
+
+            <div class="bonus-item">
+                <div class="bonus-num">1</div>
+                <div class="bonus-content">
+                    <h4>⚡ The 24-Hour Fast-Start Checklist</h4>
+                    <p>Get everything set up in under a day with this idiot-proof step-by-step checklist. No confusion.
+                        No guesswork.</p>
+                    <span class="bonus-value">Value: $97</span>&#160;&#160;<span class="bonus-free">FREE Today</span>
+                </div>
+            </div>
+
+            <div class="bonus-item">
+                <div class="bonus-num">2</div>
+                <div class="bonus-content">
+                    <h4>💎 The Traffic Multiplier Blueprint</h4>
+                    <p>Discover 3 free traffic sources that flood your links with buyers — without spending a single
+                        dollar on ads.</p>
+                    <span class="bonus-value">Value: $197</span>&#160;&#160;<span class="bonus-free">FREE Today</span>
+                </div>
+            </div>
+
+            <div class="bonus-item">
+                <div class="bonus-num">3</div>
+                <div class="bonus-content">
+                    <h4>🔥 The $1K/Week Scaling Secrets</h4>
+                    <p>Once you get your first results, use this to multiply them. The exact strategy used to go from
+                        $100/day to $1,000+/week.</p>
+                    <span class="bonus-value">Value: $203</span>&#160;&#160;<span class="bonus-free">FREE Today</span>
+                </div>
+            </div>
+
+            <div class="guarantee-box">
+                <div class="shield">🛡️</div>
+                <h4>60-Day 100% Money-Back Guarantee</h4>
+                <p style="font-size:.95rem;color:#333;">
+                    Try the entire system for 60 days. If you don't see results — or for ANY reason at all — just email
+                    us and we'll refund every penny. <strong>No questions asked.</strong>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- ═══════════════════════════════════════════════════
+     SECTION 9: SCARCITY & URGENCY
+═══════════════════════════════════════════════════ -->
+    <section class="section">
+        <div class="container">
+            <div class="scarcity-box">
+                <h3>🚨 URGENT: PRICE INCREASING VERY SOON 🚨</h3>
+                <p style="font-size:1.05rem;margin-bottom:16px;opacity:.95;">
+                    We are raising the price soon — potentially tonight. The founders' discount you see below is
+                    <strong>NOT GUARANTEED</strong> to be available when you refresh this page.
+                </p>
+                <div class="price-old">Regular Price: $197</div>
+                <div class="price-new">TODAY ONLY: $17</div>
+                <p style="font-size:.85rem;margin-top:6px;opacity:.85;">You save $180 — but ONLY if you act RIGHT NOW
+                </p>
+
+                <div style="margin-top:24px;">
+                    <p style="font-weight:700;margin-bottom:8px;">⚠️ Remaining Spots At This Price:</p>
+                    <div class="spots-bar-wrap">
+                        <div class="spots-bar"></div>
+                    </div>
+                    <p class="spots-text">78% of available spots have already been claimed. Only a few remain.</p>
+                </div>
+            </div>
+
+            <div class="cta-wrap">
+                <span class="arrow-down" style="color:var(--red);">⬇</span>
+                <a href="https://warriorplus.com/o2/a/f5ppzd3/0" class="cta-btn red-btn" target="_blank" rel="noopener">
+                    ⏰ CLAIM MY SPOT BEFORE PRICE GOES UP
+                    <span class="cta-sub-text">This discount expires when this page closes</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- ═══════════════════════════════════════════════════
+     SECTION 10: FINAL CTA
+═══════════════════════════════════════════════════ -->
+    <section class="final-cta">
+        <div class="container">
+            <h2 class="section-title" style="color:var(--white);">
+                You Have <span class="red">TWO CHOICES</span> Right Now…
+            </h2>
+            <div
+                style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:30px 0;max-width:700px;margin-left:auto;margin-right:auto;text-align:left;">
+                <div style="background:#1a0000;border:2px solid var(--red);border-radius:8px;padding:22px;">
+                    <p style="color:var(--red);font-weight:700;font-size:1rem;margin-bottom:12px;">❌ CHOICE 1 — Do
+                        Nothing</p>
+                    <p style="color:#ccc;font-size:.9rem;">Close this page. Go back to your 9-to-5. Keep struggling.
+                        Keep watching others win. Wonder "what if" forever.</p>
+                </div>
+                <div style="background:#001a00;border:2px solid var(--green);border-radius:8px;padding:22px;">
+                    <p style="color:var(--green);font-weight:700;font-size:1rem;margin-bottom:12px;">✅ CHOICE 2 — Take
+                        Action</p>
+                    <p style="color:#ccc;font-size:.9rem;">Click below. Get instant access. Follow the steps. Make your
+                        first commissions. Change your life starting TODAY.</p>
+                </div>
+            </div>
+
+            <p
+                style="color:#ddd;font-size:1.1rem;margin-bottom:30px;max-width:580px;margin-left:auto;margin-right:auto;">
+                The people who succeed online aren't smarter than you. They're not luckier. They just <span
+                    class="yellow-bg" style="color:#000;"><strong>TOOK ACTION when the opportunity was in front of
+                        them.</strong></span>
+            </p>
+
+            <span class="arrow-down" style="color:var(--yellow);">⬇</span>
+            <br />
+            <a href="https://warriorplus.com/o2/a/f5ppzd3/0" class="cta-btn" target="_blank" rel="noopener">
+                🔥 YES! GIVE ME INSTANT ACCESS NOW →
+                <span class="cta-sub-text">Start earning today — beginner-friendly — 60-day guarantee</span>
+            </a>
+            <p class="cta-note light" style="margin-top:16px;">🔒 Secure Checkout &#160;|&#160; Instant Delivery
+                &#160;|&#160; 60-Day Money-Back Guarantee</p>
+            <p style="color:#666;font-size:.8rem;margin-top:20px;">Questions? Reach out to support before this offer
+                expires.</p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <div class="container">
+            <p>
+                <a href="#">Privacy Policy</a> &#160;|&#160;
+                <a href="#">Terms of Service</a> &#160;|&#160;
+                <a href="#">Earnings Disclaimer</a> &#160;|&#160;
+                <a href="#">Contact Support</a>
+            </p>
+            <p style="margin-top:10px;">
+                EARNINGS DISCLAIMER: Results mentioned are not typical. Individual results will vary based on effort,
+                experience, and market conditions. This page contains affiliate links. We may earn a commission if you
+                purchase through our link at no extra cost to you. Nothing on this page should be considered financial
+                or legal advice.
+            </p>
+            <p style="margin-top:8px;">© 2026 All Rights Reserved.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
